@@ -1,0 +1,30 @@
+.channel-pic-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.channel-pic-container .tooltip {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+
+.channel-pic-container:hover .tooltip {
+    opacity: 1;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="/youtube-styles/video.css">
+    <link rel="stylesheet" href="/youtube-styles/header.css">
+    <link rel="stylesheet" href="youtube-styles/general.css">
+    <link rel="stylesheet" href="/youtube-styles/sidebar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img  class="hamburger-menu" src="/icons/hamburger-menu.svg">
+            <img  class="youtube-logo"  src="/icons/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="search">
+            <button class="search-button">
+                <img  class="search-icon" src="/icons/search.svg">
+                <div class="tooltip">search</div>
+            </button>
+            <!--put position absolute inside position relative to create tooltip-->
+            <button class="voice-search-button">  <!--position:relative-->
+                <img class="voice-search-icon" src="/icons/voice-search-icon.svg">
+                <div class="tooltip">search with your voice</div> <!--position:absolute-->
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="/icons/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="youtube-apps-container">
+                <img class="youtube-apps-icon" src="/icons/youtube-apps.svg">
+                <div class="tooltip">Apps</div>
+            </div>
+            
+            <div class="notifications-icon-container">
+              <img class="notifications-icon" src="/icons/notifications.svg">
+              <div class="notifications-count">4</div>
+              <div class="tooltip">Notifications</div>
+           </div>
+            <img class="current-user-pic" src="/thumbnails-profile-pic/User-channel-picture.png">
+        </div>
+       
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/">
+            <img src="/icons/home.svg">
+        </a>
+            <div>Home</div>
+        
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl">
+            <img src="/icons/explore.svg">
+        </a>
+            <div>Explore</div>
+        
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/subscriptions">
+            <img src="/icons/subscriptions.svg">
+        </a>
+            <div>Subscriptions</div>
+        
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/podcasts">
+            <img src="/icons/originals.svg">
+            </a>
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ">
+            <img src="/icons/youtube-music.svg">
+            </a>
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg">
+            <img src="/icons/library.svg">
+            </a>
+            <div>Library</div>
+        </div>
+    </nav>
+
+     <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=sixU4bVscO8&t=11s">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/night-routine-thumbnail.jpg">
+                    <div class="video-time">15:06</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@kokohome_yt">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/night_routine_profile_pic.jpg">
+                    </a> 
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=sixU4bVscO8&t=11s">
+                        <p class="video-title">Night Time Routine &#10072; Going to bed at 10PM to wake up at 5AM the next morning </p>
+                    </a>
+                   <a href="https://www.youtube.com/@kokohome_yt">
+                    <p class="video-author">kokohome</p>
+                </a>
+                    <p class="video-stats">6.1 lakh views &#x2022; 2 months ago</p>
+                </div>
+            </div>     
+            </div>
+                
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=mob4RkUFIAE">
+                        <img class="thumbnail-pic" src="thumbnails-profile-pic/cinamatic-thumbnail.webp">
+                        <div class="video-time">9:54</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                <a href="https://www.youtube.com/@LifeOfRiza">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/cinamatic-channels4_profile.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=mob4RkUFIAE">
+                    <p class="video-title">How to Film Yourself and Look Cinematic </p>
+                </a>
+                <a href="https://www.youtube.com/@LifeOfRiza">
+                    <p class="video-author">Life of Riza</p>
+                </a>    
+                    <p class="video-stats">19 lakh views &#x2022; 5 months ago</p>
+                </div>
+            </div>     
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                <a href="https://www.youtube.com/watch?v=9WnYWfRPXJI">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/art_practice_thumbnail.webp">
+                    <div class="video-time">8:31</div>
+                </a>    
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@JoshArt02">    
+                    <img  class="profile-pic" src="thumbnails-profile-pic/art_practice_channels4_profile.jpg">
+                    </a>
+                </div>
+                <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=9WnYWfRPXJI">
+                    <p class="video-title">How I practice drawing Portraits </p>
+                </a>
+                <a href="https://www.youtube.com/@JoshArt02">
+                    <p class="video-author">Josh Art</p>
+                </a>    
+                    <p class="video-stats">1.2 lakh views &#x2022; 1 months ago</p>
+                </div>
+            </div>     
+            </div>
+                
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                <a href="https://www.youtube.com/watch?v=qDjRoNlSrLI">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/infj-thumbnail.webp">
+                    <div class="video-time">5:14</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                <a href="https://www.youtube.com/@Psych2go">    
+                    <img  class="profile-pic" src="thumbnails-profile-pic/infj_channels4_profile.jpg">
+                </a>    
+                </div>
+                <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=qDjRoNlSrLI">    
+                    <p class="video-title">7 Signs You're A True INFJ(Rarest Personality Type) </p>
+                </a>    
+                <a href="https://www.youtube.com/@Psych2go">
+                    <p class="video-author">Psych2Go</p>
+                </a>    
+                    <p class="video-stats">18 lakh views &#x2022; 1 year ago</p>
+                </div>
+            </div>     
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                <a href="https://www.youtube.com/watch?v=hON5t_69TBk">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/watercolor-thumbnail.webp">
+                    <div class="video-time">15:40</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@JilleeArts">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/watercolor-channels4_profile.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=hON5t_69TBk">
+                    <p class="video-title">Loose Ink &amp; Watercolor Sketching Tutorial &#10072; How to Sketch a Cafe</p>
+                </a>
+                <a href="https://www.youtube.com/@JilleeArts">
+                    <p class="video-author">Jillee Arts</p>
+                </a>    
+                    <p class="video-stats">19 lakh views &#x2022; 1 year ago</p>
+                </div>
+            </div>     
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=Gy26X-4ZQFA">
+                    <img class="thumbnail-pic" src="/thumbnails-profile-pic/picsart-thumbnail.webp">
+                    <div class="video-time">6:27</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@ErikaPsndln">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/picsart-channel-profile.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=Gy26X-4ZQFA">
+                    <p class="video-title">How to draw cartoon portrait &#10072; Picsart Tutorial</p>
+                </a>
+                <a href="https://www.youtube.com/@ErikaPsndln">
+                    <p class="video-author">Erika Psndln</p>
+                </a>
+                    <p class="video-stats">20 lakh views &#x2022; 3 year ago</p>
+                </div>
+            </div>     
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                <a href="https://www.youtube.com/watch?v=wNdKOQ6ikOE">
+                    <img class="thumbnail-pic" src="/thumbnails-profile-pic/french-thumbnail.webp">
+                    <div class="video-time">19:22</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@frenchvibes7604">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/french-channels4_profile.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=wNdKOQ6ikOE">
+                    <p class="video-title">Daily French Life in the Village, French Food, French Lifestyle, Local Market in Italy</p>
+                </a>
+                <a href="https://www.youtube.com/@frenchvibes7604">
+                    <p class="video-author">French Vibes</p>
+                </a>
+                    <p class="video-stats">9 lakh views &#x2022; 4 months ago</p>
+                </div>
+            </div>     
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=7jk3UDqHCS0">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/kitchen-thumbnail.webp">
+                    <div class="video-time">16:45</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@cloudyhills">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/kitchen-channels4_profile.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=7jk3UDqHCS0">
+                    <p class="video-title">Kitchen Makeover &#10072; Upgrade Ikea Kitchen to a cozy bright space + DIY home cafe</p>
+                </a>
+                <a href="https://www.youtube.com/@cloudyhills">
+                    <p class="video-author">cloudyhills</p>
+                </a>
+                    <p class="video-stats">11 lakh views &#x2022; 1 year ago</p>
+                </div>
+            </div>     
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=XOYQMSScJA8">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/room-makeover-thumbnail.webp">
+                    <div class="video-time">22:11</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@cabii">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/channel-pic-makeover.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=XOYQMSScJA8">
+                    <p class="video-title">aesthetic and extremely (!!!) small room makeover 🍃 • a 4sqm bedroom with loft bed + desk decor </p>
+                </a>
+                <a href="https://www.youtube.com/@cabii">
+                    <p class="video-author">cabii</p>
+                </a>
+                    <p class="video-stats">29 lakh views &#x2022; 3 year ago</p>
+                </div>
+            </div>     
+            </div>
+  
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=hsfScVJgGOw">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/heavenly-thumbnail.webp">
+                    <div class="video-time">23:49</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@lisztomania27">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/heavenly-channels4_profile.jpg">
+                </a>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=hsfScVJgGOw">
+                    <p class="video-title">Heavenly playlist </p>
+                </a>
+                    <a href="https://www.youtube.com/@lisztomania27">
+                    <p class="video-author">lisztomania</p>
+                </a>
+                    <p class="video-stats">28 lakh views &#x2022; 1 year ago</p>
+                </div>
+            </div>     
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row"> 
+                    <a href="https://www.youtube.com/watch?v=EtAKmIy1HZA&t=10s">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/cottage-girl-thumbnail.webp">
+                    <div class="video-time">6:55</div>
+                </a>
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@TheCottageFairy">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/channels4_profile-cottage-girl.jpg">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=EtAKmIy1HZA&t=10s">
+                    <p class="video-title">this is where I live </p>
+                </a>
+                <a href="https://www.youtube.com/@TheCottageFairy">
+                    <p class="video-author">TheCottageFairy</p>
+                </a>
+                    <p class="video-stats">5.2 lakh views &#x2022; 2 year ago</p>
+                </div>
+            </div>     
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=KvtT3UyhibQ">
+                    <img class="thumbnail-pic" src="thumbnails-profile-pic/swedish-thumbnailwebp.webp">
+                    <div class="video-time">1:03</div>
+                </a> 
+                </div>
+                <div class="video-info-grid">
+                <div class="channel-pic">
+                    <a href="https://www.youtube.com/@jonnajinton">
+                    <img  class="profile-pic" src="thumbnails-profile-pic/swedish-channel-pic.jpg">
+                    </a>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=KvtT3UyhibQ">
+                    <p class="video-title">Kulning - Ancient Swedish herdingcall </p>
+                </a>
+                <a href="https://www.youtube.com/@jonnajinton">
+                    <p class="video-author">Jonna Jinton</p>
+                </a>
+                    <p class="video-stats">1.2 crore views &#x2022; 7 year ago</p>
+                </div>
+            </div>     
+        </div>
+        </section>  
+     </main>
+        
+            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
